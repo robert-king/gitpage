@@ -15,13 +15,131 @@ https://robert-king.github.io/gitpage/
       ttq.load('CTBD25JC77UF4MDQQDP0');
       ttq.page();
     }(window, document, 'ttq');
+
+    setTimeout(() => {
+      ttq.identify({
+	"email": "c2c43e445b23369663cb43c4816a353de6637bf4ea97f5e441620f56abed401c", // string. The email of the customer if available. It must be hashed with SHA-256 on the client side.
+	"phone_number": "", // string. The phone number of the customer if available. It must be hashed with SHA-256 on the client side.
+	"external_id": "" // string. Any unique identifier, such as loyalty membership IDs, user IDs, and external cookie IDs.It must be hashed with SHA-256 on the client side.
+});
+
+ttq.track('ViewContent', {
+	"contents": [
+		{
+			"content_id": "1077218", // string. ID of the product. Example: "1077218".
+			"content_type": "product", // string. Either product or product_group.
+			"content_name": "shirt" // string. The name of the page or product. Example: "shirt".
+		}
+	],
+	"value": "100", // number. Value of the order or items sold. Example: 100.
+	"currency": "USD" // string. The 4217 currency code. Example: "USD".
+});
+
+// ttq.track('AddToWishlist', {
+// 	"contents": [
+// 		{
+// 			"content_id": "<content_identifier>", // string. ID of the product. Example: "1077218".
+// 			"content_type": "<content_type>", // string. Either product or product_group.
+// 			"content_name": "<content_name>" // string. The name of the page or product. Example: "shirt".
+// 		}
+// 	],
+// 	"value": "<content_value>", // number. Value of the order or items sold. Example: 100.
+// 	"currency": "<content_currency>" // string. The 4217 currency code. Example: "USD".
+// });
+
+// ttq.track('Search', {
+// 	"contents": [
+// 		{
+// 			"content_id": "<content_identifier>", // string. ID of the product. Example: "1077218".
+// 			"content_type": "<content_type>", // string. Either product or product_group.
+// 			"content_name": "<content_name>" // string. The name of the page or product. Example: "shirt".
+// 		}
+// 	],
+// 	"value": "<content_value>", // number. Value of the order or items sold. Example: 100.
+// 	"currency": "<content_currency>", // string. The 4217 currency code. Example: "USD".
+// 	"query": "<search_keywords>" // string. The word or phrase used to search. Example: "SAVE10COUPON".
+// });
+
+// ttq.track('AddPaymentInfo', {
+// 	"contents": [
+// 		{
+// 			"content_id": "<content_identifier>", // string. ID of the product. Example: "1077218".
+// 			"content_type": "<content_type>", // string. Either product or product_group.
+// 			"content_name": "<content_name>" // string. The name of the page or product. Example: "shirt".
+// 		}
+// 	],
+// 	"value": "<content_value>", // number. Value of the order or items sold. Example: 100.
+// 	"currency": "<content_currency>" // string. The 4217 currency code. Example: "USD".
+// });
+
+// ttq.track('AddToCart', {
+// 	"contents": [
+// 		{
+// 			"content_id": "<content_identifier>", // string. ID of the product. Example: "1077218".
+// 			"content_type": "<content_type>", // string. Either product or product_group.
+// 			"content_name": "<content_name>" // string. The name of the page or product. Example: "shirt".
+// 		}
+// 	],
+// 	"value": "<content_value>", // number. Value of the order or items sold. Example: 100.
+// 	"currency": "<content_currency>" // string. The 4217 currency code. Example: "USD".
+// });
+
+// ttq.track('InitiateCheckout', {
+// 	"contents": [
+// 		{
+// 			"content_id": "<content_identifier>", // string. ID of the product. Example: "1077218".
+// 			"content_type": "<content_type>", // string. Either product or product_group.
+// 			"content_name": "<content_name>" // string. The name of the page or product. Example: "shirt".
+// 		}
+// 	],
+// 	"value": "<content_value>", // number. Value of the order or items sold. Example: 100.
+// 	"currency": "<content_currency>" // string. The 4217 currency code. Example: "USD".
+// });
+
+// ttq.track('PlaceAnOrder', {
+// 	"contents": [
+// 		{
+// 			"content_id": "<content_identifier>", // string. ID of the product. Example: "1077218".
+// 			"content_type": "<content_type>", // string. Either product or product_group.
+// 			"content_name": "<content_name>" // string. The name of the page or product. Example: "shirt".
+// 		}
+// 	],
+// 	"value": "<content_value>", // number. Value of the order or items sold. Example: 100.
+// 	"currency": "<content_currency>" // string. The 4217 currency code. Example: "USD".
+// });
+
+// ttq.track('CompleteRegistration', {
+// 	"contents": [
+// 		{
+// 			"content_id": "<content_identifier>", // string. ID of the product. Example: "1077218".
+// 			"content_type": "<content_type>", // string. Either product or product_group.
+// 			"content_name": "<content_name>" // string. The name of the page or product. Example: "shirt".
+// 		}
+// 	],
+// 	"value": "<content_value>", // number. Value of the order or items sold. Example: 100.
+// 	"currency": "<content_currency>" // string. The 4217 currency code. Example: "USD".
+// });
+
+// ttq.track('CompletePayment', {
+// 	"contents": [
+// 		{
+// 			"content_id": "<content_identifier>", // string. ID of the product. Example: "1077218".
+// 			"content_type": "<content_type>", // string. Either product or product_group.
+// 			"content_name": "<content_name>" // string. The name of the page or product. Example: "shirt".
+// 		}
+// 	],
+// 	"value": "<content_value>", // number. Value of the order or items sold. Example: 100.
+// 	"currency": "<content_currency>" // string. The 4217 currency code. Example: "USD".
+// });
+    }, 1000);
+
     </script>
     <!-- TikTok Pixel Code End -->
     </head>
     <body>
       <h1>TTEM test events</h1>
 
-      <div><button onclick="ttq.track('View Content', {})">Button A</button></div>
+      <!-- <div><button onclick="ttq.track('View Content', {})">Button A</button></div>
   
       <div><button onclick="ttq.track('AddToCart', {
           content_name: 'book',
@@ -67,6 +185,6 @@ https://robert-king.github.io/gitpage/
           quantity: 1,
           description: 'book',
           content_id: '123'
-      })">Button G</button></div>
+      })">Button G</button></div> -->
     </body>
 </html>
